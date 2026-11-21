@@ -48,6 +48,14 @@ footer{text-align:center;font-weight:800;margin-top:24px}
 .clip-link{display:inline-block;margin-top:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .game-frame{overflow:hidden;height:clamp(480px,75vh,720px);border:3px solid var(--ink);border-radius:19px;background:var(--ink);box-shadow:5px 5px var(--ink)}
 .game-frame iframe{display:block;width:100%;height:100%;border:0}
+.featured-release,.track-title{display:flex;align-items:center;gap:12px}
+.featured-cover,.track-cover{flex:none;object-fit:cover;border:2px solid var(--ink);border-radius:8px}
+.featured-cover{width:clamp(64px,18vw,96px);height:auto}
+.track-cover{width:52px;height:52px}
+.brand-icon{flex:none}
+.grid a,.actions a{gap:7px}
+.actions a:first-child .brand-icon{filter:invert(1)}
+@media(max-width:370px){.track-title{gap:6px}.track-cover{width:40px;height:40px}}
 </style>
 </head>
 <body>
@@ -57,10 +65,10 @@ footer{text-align:center;font-weight:800;margin-top:24px}
 <div class="identity"><img class="avatar" src="profil.webp" alt="" width="384" height="384"><h1>KEMCY<span>+3</span></h1></div>
 </header>
 <section class="feature" aria-labelledby="featured">
-<div><p>À la une</p><h2 id="featured">GYOZA</h2></div>
+<div class="featured-release"><img class="featured-cover" src="https://m.media-amazon.com/images/I/518FJfx3xvL._SX472_SY472_BL0_QL100_.jpg" alt="" width="96" height="96" decoding="async"><div><p>À la une</p><h2 id="featured">GYOZA</h2></div></div>
 <div class="actions">
-<a href="https://open.spotify.com/search/KEMCY%20%2B3%20GYOZA" aria-label="Rechercher GYOZA sur Spotify">Spotify</a>
-<a href="https://soundcloud.com/kemcy3/gyoza" aria-label="Écouter GYOZA sur SoundCloud">SoundCloud</a>
+<a href="https://open.spotify.com/search/KEMCY%20%2B3%20GYOZA" aria-label="Rechercher GYOZA sur Spotify"><img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/spotify.svg" alt="" width="18" height="18">Spotify</a>
+<a href="https://soundcloud.com/kemcy3/gyoza" aria-label="Écouter GYOZA sur SoundCloud"><img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/soundcloud.svg" alt="" width="18" height="18">SoundCloud</a>
 </div>
 </section>
 <section aria-labelledby="clip">
@@ -73,10 +81,10 @@ footer{text-align:center;font-weight:800;margin-top:24px}
 <section aria-labelledby="profiles">
 <h2 id="profiles">Musique &amp; réseaux</h2>
 <div class="grid">
-<a href="https://open.spotify.com/artist/009ev21x0Q0HioE1gIUvhT">Spotify</a>
-<a href="https://soundcloud.com/kemcy3">SoundCloud</a>
-<a href="https://www.instagram.com/_kemcy/">Instagram</a>
-<a href="https://www.youtube.com/@_KEMCY">YouTube</a>
+<a href="https://open.spotify.com/artist/009ev21x0Q0HioE1gIUvhT"><img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/spotify.svg" alt="" width="18" height="18">Spotify</a>
+<a href="https://soundcloud.com/kemcy3"><img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/soundcloud.svg" alt="" width="18" height="18">SoundCloud</a>
+<a href="https://www.instagram.com/_kemcy/"><img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/instagram.svg" alt="" width="18" height="18">Instagram</a>
+<a href="https://www.youtube.com/@_KEMCY"><img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/youtube.svg" alt="" width="18" height="18">YouTube</a>
 </div>
 </section>
 <section aria-labelledby="game">
@@ -89,9 +97,9 @@ footer{text-align:center;font-weight:800;margin-top:24px}
 <section aria-labelledby="singles">
 <h2 id="singles">Singles</h2>
 <div class="tracks">
-<a href="https://open.spotify.com/search/KEMCY%20%2B3%20SORRY">SORRY<span>Rechercher sur Spotify</span></a>
-<a href="https://open.spotify.com/search/KEMCY%20%2B3%20CROSS">CROSS<span>Rechercher sur Spotify</span></a>
-<a href="https://open.spotify.com/search/KEMCY%20%2B3%20GAME%20OVER">GAME OVER<span>Rechercher sur Spotify</span></a>
+<a href="https://open.spotify.com/search/KEMCY%20%2B3%20SORRY"><strong class="track-title"><img class="track-cover" src="https://m.media-amazon.com/images/I/61Sb5cGzBlL._SX354_SY354_BL0_QL100_.jpg" alt="" width="52" height="52" loading="lazy" decoding="async">SORRY</strong><span>Rechercher sur Spotify</span></a>
+<a href="https://open.spotify.com/search/KEMCY%20%2B3%20CROSS"><strong class="track-title"><img class="track-cover" src="https://m.media-amazon.com/images/I/51bmnMrlL7L._SX354_SY354_BL0_QL100_.jpg" alt="" width="52" height="52" loading="lazy" decoding="async">CROSS</strong><span>Rechercher sur Spotify</span></a>
+<a href="https://open.spotify.com/search/KEMCY%20%2B3%20GAME%20OVER"><strong class="track-title"><img class="track-cover" src="https://m.media-amazon.com/images/I/51u3yP-0JML._SX354_SY354_BL0_QL100_.jpg" alt="" width="52" height="52" loading="lazy" decoding="async">GAME OVER</strong><span>Rechercher sur Spotify</span></a>
 </div>
 </section>
 <footer>Maison de Bois</footer>
